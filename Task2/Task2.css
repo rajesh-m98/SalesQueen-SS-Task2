@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 755px;
+}
+
+/* ------------------------------------ Nav Bar ------------------------- */
+#nav {
+    background-color: white;
+    width: 100%;
+    height: 55px;
+    box-shadow: 5px 5px 5px rgb(213, 213, 213);
+    display: flex;
+    font-size: 17px;
+}
+
+#nav #menu {
+    padding: 17px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#nav #rightcorner {
+    margin-left: 900px;
+}
+
+#nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ------------------------------Main Content--------------------------- */
+
+#sidebar {
+    background-color: rgb(0, 12, 87);
+    width: 200px;
+    height: 690px;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    margin-left: 0px;
+}
+
+/* --------------------------Profile Menu-------------------------------- */
+#profilemenu {
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 17px;
+    width: 120px;
+    display: none;
+    position: relative;
+    margin-top: 13px;
+    background-color: rgb(212, 212, 212);
+    margin-left: 900px;
+}
+
+#content {
+    margin-left: 185px;
+    margin-top: 15px;
+    display: flex;
+    width: 800px;
+    /* position: absolute; */
+    padding: 10px;
+    text-align: center;
+}
+
+#content #diagrams th {
+    font-weight: normal;
+    text-align: left;
+    /* padding: 5px; */
+}
+
+#content #diagrams #diagram1, #content #diagrams #diagram2,
+#content #diagrams #diagram4, #content #diagrams #diagram5 {
+    width: 120px;
+    padding: 10px;
+    height: 30px;
+    background-color: #ffffff;
+    color: rgb(123, 123, 123);
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow:  5px  5px 5px rgb(179, 179, 179),
+                -5px -5px 5px rgb(179, 179, 179),
+                -5px  5px 5px rgb(179, 179, 179),
+                 5px -5px 5px rgb(179, 179, 179);
+}
+
+#content #diagram1 .fa-message, #diagram2 .fa-dollar-sign,
+#diagram4 .fa-user-group, #diagram5 .fa-cart-shopping {
+    font-size: 22px;
+    color: rgb(0, 119, 255);
+}
+
+#content #diagram3 {
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid white;
+    box-shadow:  5px  5px 5px rgb(179, 179, 179),
+                -5px -5px 5px rgb(179, 179, 179),
+                -5px  5px 5px rgb(179, 179, 179),
+                 5px -5px 5px rgb(179, 179, 179);
+    border-radius: 5px;
+    margin-top: 0px;
+    width: 378px;
+    height: 280px;
+}
+
+#content #diagrams #diagram1:hover, #content #diagrams #diagram2:hover, 
+#content #diagrams #diagram3:hover, #content #diagrams #diagram4:hover, 
+#content #diagrams #diagram5:hover, #content #diagrams #diagram6:hover,
+#content #diagrams #diagram7:hover, #content #diagrams #calendar:hover {
+    box-shadow:  5px  5px 5px rgb(255, 111, 0),
+                -5px -5px 5px rgb(0, 89, 255),
+                -5px  5px 5px rgb(255, 111, 0),
+                 5px -5px 5px rgb(0, 89, 255);
+} 
+
+ #roundbutton {
+    text-align: right;
+    margin-left: 180px;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    background-color: rgb(207, 207, 207);
+}
+
+#bold {
+    color: black;
+    font-size: 25px;
+}
+
+#content #calendar {
+    display: flex;
+    position: absolute;
+    width: 330px;
+    height: 320px;
+    text-align: center;
+    /* margin-left: 30px; */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(154, 154, 154);
+    box-shadow:  5px  5px 5px rgb(179, 179, 179),
+                -5px -5px 5px rgb(179, 179, 179),
+                -5px  5px 5px rgb(179, 179, 179),
+                 5px -5px 5px rgb(179, 179, 179);
+}
+
+#content #diagrams #calendar th {
+    text-align: center;
+    word-spacing: 10px;
+    padding: 3px;
+}
+
+#content #diagrams #calendar th strong {
+    font-size: 20px;
+}
+
+#calendar th {
+    background-color: rgb(0, 123, 255);
+    color: #fff;
+    width: 70px;
+    text-align: center;
+    height: 30px;
+}
+
+#calendar th, #calendar td {
+    border: 1px solid black;
+}
+
+#calendar td {
+    height: 30px;
+    border-radius: 8px;
+}
+
+#calendar #nextMonth, #prevMonth {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+    /* text-align: center; */
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+#calendar #nextMonth:hover, #prevMonth:hover {
+    background-color: rgb(255, 0, 0);
+    
+}
+
+#calendar .today {
+    background-color: #ff1500;
+    color: #fff;
+}
+
+#calendar #monthYear {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+#diagram6 {
+    width: 330px;
+    display: flex;
+    position: absolute;
+    margin-left: 347px;
+    height: 320px;
+    background-color: #ffffff;
+    border: 1px solid white;
+    box-shadow:  5px  5px 5px rgb(179, 179, 179),
+                -5px -5px 5px rgb(179, 179, 179),
+                -5px  5px 5px rgb(179, 179, 179),
+                 5px -5px 5px rgb(179, 179, 179);
+    border-radius: 5px;
+}
+
+#diagram7 {
+    margin-left: 695px;
+    display: flex;
+    position: absolute;
+    width: 200px;  
+    height: 320px; 
+    border: 1px solid white;
+    box-shadow:  5px  5px 5px rgb(179, 179, 179),
+                -5px -5px 5px rgb(179, 179, 179),
+                -5px  5px 5px rgb(179, 179, 179),
+                 5px -5px 5px rgb(179, 179, 179);
+    border-radius: 5px;
+}
+
+/* Styles for small screens (e.g., mobile phones) */
+@media (max-width: 767px) {
+    #nav #rightcorner {
+        display: none;
+    }
+
+    #content {
+        margin-left: 0;
+        margin-top: 70px; /* Adjust for the fixed navigation bar */
+        padding: 10px;
+    }
+
+    #content #diagrams {
+        display: block;
+    }
+
+    #content #diagrams th {
+        font-size: 16px;
+    }
+
+    #content #diagrams #diagram1, #content #diagrams #diagram2,
+    #content #diagrams #diagram4, #content #diagrams #diagram5 {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    #content #diagrams #diagram3 {
+        width: 100%;
+        height: auto;
+    }
+
+    #content #diagrams #calendar {
+        width: 100%;
+        height: auto;
+    }
+
+    #diagram6 {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    #diagram7 {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    #calendar th {
+        width: 14.28%; /* Equal-width for all days in a week */
+    }
+}

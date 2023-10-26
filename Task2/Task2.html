@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Task2.css">
+    <title>Task 2</title>
+</head>
+<body>
+    <div>
+        <div id="nav">
+            <div id="menu" onclick="toggleSidebar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <table id="rightcorner" cellspacing="15px">
+                <tr>
+                    <td>
+                        <a href="">
+                            <i class="fa-regular fa-bell"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            <i class="fa-regular fa-message"></i>
+                    </a>
+                    </td>
+                    <td>
+                        <a href="" id="user">
+                            <i class="fa-regular fa-user"></i> Users <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="sidebar">
+            <table cellspacing="16px">
+                <tr>
+                    <td colspan="2">Admin</td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td colspan="2">Pages <br> </td> 
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-sliders"></i></td>
+                    <td>Dashboard</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-user"></i></td>
+                    <td>Profile</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-right-to-bracket"></i></td>
+                    <td>Sign In</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-user-plus"></i></td>
+                    <td>Sign Up</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-chalkboard"></i></td>
+                    <td>Blank</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Tools & Components</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-regular fa-square"></i></td>
+                    <td>Buttons</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-square-check"></i></td>
+                    <td>Forms</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-table-cells-large"></i></td>
+                    <td>Cards</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-bars"></i></td>
+                    <td>Typography</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-brands fa-accessible-icon"></i></td>
+                    <td>Icons</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Plugins & Addons</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-chart-simple"></i></td>
+                    <td>Charts</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-regular fa-map"></i></td>
+                    <td>Maps</td>
+                </tr>
+            </table>
+        </div>
+        <!-- -----------------------Content----------------- -->
+        <div id="content">
+            <table id="diagrams" cellspacing="15px">
+                <th>
+                    <strong>Analytics</strong> DashBoard
+                </th>
+                <tr>
+                    <td>
+                        <table id="diagram1">
+                            <tr>
+                                <td>Sales</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button id="roundbutton"><i class="fa-regular fa-message"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong id="bold">2.382</strong></td>
+                            </tr>
+                            <tr>
+                                <td>-3.05% Since last week</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table id="diagram2">
+                            <tr>
+                                <td>Earnings</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button id="roundbutton"><i class="fa-solid fa-dollar-sign"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong id="bold">$21.300</strong></td>
+                            </tr>
+                            <tr>
+                                <td>6.65% Since last week</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td rowspan="2">
+                        <img id="diagram3" src="Diagram3.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table id="diagram4">
+                            <tr>
+                                <td>Visitors</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button id="roundbutton"><i class="fa-solid fa-user-group"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong id="bold">14.212</strong></td>
+                            </tr>
+                            <tr>
+                                <td>-3.05% Since last week</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table id="diagram5">
+                            <tr>
+                                <td>Orders</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button id="roundbutton"><i class="fa-solid fa-cart-shopping"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong id="bold">64</strong></td>
+                            </tr>
+                            <tr>
+                                <td>-3.05% Since last week</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table id="calendar">
+                            <th colspan="7"> <strong>Calendar</strong> <br> <br>
+                                <button id="prevMonth"> &lt; </button>
+                                <span id="monthYear">October 2023</span>
+                                <button id="nextMonth"> &gt; </button>
+                            </th>
+                            <tr id="calendar-body">
+                            </tr>
+                        </table>
+                        <img id="diagram6" src="Diagram6.png" alt="">
+                        <img id="diagram7" src="Diagram7.png" alt="">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="Task2.js"></script>
+</body>
+</html>
